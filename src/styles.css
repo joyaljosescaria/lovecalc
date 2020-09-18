@@ -1,0 +1,75 @@
+*{
+  font-family: Ranchers;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/originals/86/54/e2/8654e24e3700d309eef3a26665f5a088.jpg");
+  background-size:cover;
+}
+
+input{
+  margin-bottom: 5vh;
+  padding: 7px;
+  width: 30vw;
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+input::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus{
+  outline: none;
+}
+
+button
+{
+  margin-bottom: 5vh;
+  padding: 10px;
+  color: white;
+  /* background: purple; */
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), 
+  rgba(117, 19, 93, 0.73));
+  border: 0px;
+  letter-spacing: 5px;
+  border-radius: 10px;
+}
+
+button:hover
+{
+  background-color: pink;
+}
+
+button:focus{
+  outline: none;
+}
+
+h1
+{
+  font-size: 70px;
+  color: white;
+  letter-spacing: 3px;
+}
