@@ -43,7 +43,7 @@ export default function App() {
       }
       count.push(s);
       s=0;
-      names = names.replaceAll(names[0] , "")
+      names = names.replace(new RegExp(names[0], 'gi'), '')
     }
     return count
   }
@@ -86,7 +86,7 @@ export default function App() {
         newarr.push(extraNum)
       }
       
-      var len = newarr.toString().replaceAll("," , "").length
+      var len = newarr.toString().replace(new RegExp(',', 'gi'), '').length
 
       counts.length = 0
       counts = Array.from(newarr);
@@ -96,7 +96,7 @@ export default function App() {
       if(len === 2 || newarr[0] === 100)
       {
         cont = false
-        var newdata = newarr.toString().replaceAll("," , "")
+        var newdata = newarr.toString().replace(new RegExp(',', 'gi'), '')
         console.log(newdata)
       }
     }
